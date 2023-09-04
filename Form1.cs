@@ -47,9 +47,9 @@ namespace _01BASIC
             if (recvData.StartsWith("TEMP :")) {
                 Invoke(new Action(() => { this.TEMP_BOX.Text = ""; TEMP_BOX.Text = recvData.Replace("TEMP : ", ""); })) ;
             }
-            if (recvData.StartsWith("JODO :"))
+            if (recvData.StartsWith("PH :"))
             {
-                Invoke(new Action(() => { this.JODO_BOX.Text = ""; JODO_BOX.Text = recvData.Replace("JODO : ", ""); }));
+                Invoke(new Action(() => { this.JODO_BOX.Text = ""; JODO_BOX.Text = recvData.Replace("PH : ", ""); }));
             }
             if (recvData.StartsWith("UW :"))
             {
