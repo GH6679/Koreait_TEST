@@ -39,6 +39,7 @@ namespace _01BASIC
             //스레드 생성 코드
             //Invoke(new Action(() => { 처리로직 }));
 
+
             // LED 점등 스레드
             if (recvData.StartsWith("LED:")) { 
             Invoke(new Action(() => { Console.WriteLine(recvData); this.textArea.AppendText(recvData + "\r\n"); }));
